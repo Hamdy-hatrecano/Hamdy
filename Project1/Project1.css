@@ -1,0 +1,32 @@
+.container {
+    width: 500px;
+    height:500px;
+    color: blue;
+    background-color: black;
+}
+
+
+.test {
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+}
+center {
+    border: 5px red solid;
+     background-color: rgba(42, 35, 65, 0.883);
+     color: white;
+
+}
+div{
+    display: block;
+    visibility:inherit;
+}
+a{
+    text-align:center;
+    color: gold;
+    padding: 38px;
+}
+a:hover{
+    
+    text-decoration: none;
+    position:relative;
+}

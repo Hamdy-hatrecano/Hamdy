@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tasbeeh Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 33px;
+            padding: 0px;
+        }
+        .container {
+            background-color: burlywood;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#countDisplay {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+.click {
+    color: blue;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>تسبيح</h1>
+      
+      
+      
+      <p class="click">انقر علي الزر الأسفل للبداية في التسبيح :</p>
+      <button id="countButton">اشهد ان لا اله الا الله و أن محمد رسول الله</button>
+      <button id="countButton">الحمدلله</button>
+      <button id="countButton">استغفر الله</button>
+      <div id="countDisplay">0</div>
+      <button id="resetButton">حذف</button>
+    </div>
+    <script>
+        const countButton = document.getElementById("countButton");
+const resetButton = document.getElementById("resetButton");
+const countDisplay = document.getElementById("countDisplay");
+
+let count = 0;
+
+countButton.addEventListener("click", function() {
+  count++;
+  countDisplay.innerHTML = count;
+});
+
+resetButton.addEventListener("click", function() {
+  count = 0;
+  countDisplay.innerHTML = count;
+});
+
+    </script>
+  </body>
+</html>
